@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+         xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+     <h:head>
+         <title> Patrones</title>
+     
+        <link rel ="stylesheet" href="resources/css/estilos.css"/>
+    </h:head>
+    
+    <h:body>
+        
+        <h:form >
+            <br/>
+            
+           <div>
+             <p:growl id="msgs" showDetail="true"/>
+             
+               <p:panel id="pnlPCreacionales"   header="Patrones Creacionales" style="margin-bottom:10px;">
+                     <h:panelGrid id="pnlgrdBus" columns="10" cellpadding="5"   > 
+                         <p:commandButton id ="btnAbstractFactory" value ="Abstract Factory" update ="msgs" styleClass="icon-show" actionListener="#{PAbstractFactory.ejecutarAbstractFactory(actionEvent)}"/>
+                         <p:commandButton id ="btnBuilder" value ="Builder" update ="msgs" styleClass="icon-show" actionListener="#{PBuilder.ejecutarBuilder(actionEvent)}"/>
+                         <p:commandButton id ="btnFactoryMethod" value ="Factory Method" update ="msgs" styleClass="icon-show" actionListener="#{PFactoryMethod.ejecutarFactoryMethod(actionEvent)}"/>
+                         <p:commandButton id ="btnPrototype" value ="Prototype" update ="msgs" styleClass="icon-show" actionListener="#{PPrototype.ejecutarPrototype(actionEvent)}"/>
+                         <p:commandButton id ="btnSingleton" value ="Singleton" update ="msgs" styleClass="icon-show" actionListener="#{PSingleton.ejecutarSingleton(actionEvent)}"/>
+                   </h:panelGrid>
+                 </p:panel>
+             <p:panel id="pnlPEstrucuurales"   header="Patrones Estructurales" style="margin-bottom:10px;">
+                 <h:panelGrid id="pnlgrdCreacionales" columns="10" cellpadding="5"  >
+                      <p:commandButton id ="btnAdapterWrapper" value ="Wrapper" update ="msgs" styleClass="icon-show" actionListener="#{PAdapterWrapper.ejecutarAdapterWrapper(actionEvent)}"/>
+                      <p:commandButton id ="btnBridge" value ="Bridge" update ="msgs" styleClass="icon-show" actionListener="#{PBridge.ejecutarBridge(actionEvent)}"/>
+                      <p:commandButton id ="btnComposite" value ="Composite" update ="msgs" styleClass="icon-show" actionListener="#{PComposite.ejecutarComposite(actionEvent)}"/>
+                      <p:commandButton id ="btnDecorator" value ="Decorator" update ="msgs" styleClass="icon-show" actionListener="#{PDecorator.ejecutarDecorator(actionEvent)}"/>
+                      <p:commandButton id ="btnFacade" value ="Facade" update ="msgs" styleClass="icon-show" actionListener="#{PFacade.ejecutarFacade(actionEvent)}"/>
+                      <p:commandButton id ="btnFlyWeight" value ="FlyWeight" update ="msgs" styleClass="icon-show" actionListener="#{PFlyweight.ejecutarPFlyweight(actionEvent)}"/>
+                      <p:commandButton id ="btnProxy" value ="Proxy" update ="msgs" styleClass="icon-show" actionListener="#{PProxy.ejecutarProxy(actionEvent)}"/>
+                      <p:commandButton id ="btnModulo" value ="Modulo" update ="msgs" styleClass="icon-show" actionListener="#{PModulo.ejecutarModulo(actionEvent)}"/>
+                          
+                 </h:panelGrid>
+             </p:panel>
+             <p:panel id="pnlPComportamiento"   header="Patrones Comportamiento" style="margin-bottom:10px;">
+                 <h:panelGrid id="pnlgrdComportamiento" columns="10" cellpadding="5"  >
+                     <p:commandButton id ="btnChainOfResponsability" value ="Chain Of Responsability" update ="msgs" styleClass="icon-show" actionListener="#{PChainOfResponsability.ejecutarChainOfResponsability(actionEvent)}"/>
+                     <p:commandButton id ="btnCommand" value ="Command" update ="msgs" styleClass="icon-show" actionListener="#{PCommand.ejecutarCommand(actionEvent)}"/>
+                     <p:commandButton id ="btnInterpreter" value ="Interpreter" update ="msgs" styleClass="icon-show" actionListener="#{PInterpreter.ejecutarInterpreter(actionEvent)}"/>
+                     <p:commandButton id ="btnIterador" value ="Iterador" update ="msgs" styleClass="icon-show" actionListener="#{PIterador.ejecutarIterador(actionEvent)}"/>
+                      <p:commandButton id ="btnMediator" value ="Mediator" update ="msgs" styleClass="icon-show" actionListener="#{PMediator.ejecutarMediator(actionEvent)}"/>
+                      <p:commandButton id ="btnMemento" value ="Memento" update ="msgs" styleClass="icon-show" actionListener="#{PMemento.ejecutarMemento(actionEvent)}"/>
+                      <p:commandButton id ="btnObserver" value ="Observer" update ="msgs" styleClass="icon-show" actionListener="#{PObserver.ejecutarObserver(actionEvent)}"/>
+                      <p:commandButton id ="btnState" value ="State" update ="msgs" styleClass="icon-show" actionListener="#{PState.ejecutarState(actionEvent)}"/>
+                      <p:commandButton id ="btnStrategy" value ="Strategy" update ="msgs" styleClass="icon-show" actionListener="#{PStrategy.ejecutarStrategy(actionEvent)}"/>
+                      <p:commandButton id ="btnTemplateMethod" value ="Template Method" update ="msgs" styleClass="icon-show" actionListener="#{PTemplateMethod.ejecutarTemplateMethod(actionEvent)}"/>
+                      <p:commandButton id ="btnVisitor" value ="Visitor" update ="msgs" styleClass="icon-show" actionListener="#{PVisitor.ejecutarVisitor(actionEvent)}"/>
+                      
+                 </h:panelGrid>
+                 
+             </p:panel>
+                 
+           </div>
+            
+         
+           </h:form>
+    </h:body>
+</html>
