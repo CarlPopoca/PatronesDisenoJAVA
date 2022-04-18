@@ -6,7 +6,7 @@ package AdapterWrapper;
 
 /**
  *
- * @author Praxis
+ * @author
  */
 public class AcousticGuitar {
     public void play()
